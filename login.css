@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+ .deen{
+    /* background-color: black; */
+    display: flex;
+    justify-content:center;
+    /* background-color: #18181d; */
+    gap:0px;
+    align-items: center;
+    /* min-height: 100vh; */
+    width: 100%;
+    padding-top: 60px;
+    flex: 1;
+ }
+
+ .esede{
+    background-color: #131317;
+    min-height: 100vh;
+    padding: 30px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .van img{
+width: 50px;
+
+ }
+ 
+ .delee h1{
+    font-size: 32px;
+    font-weight: 700;
+padding-top: 50px;
+
+color: white;
+ }
+
+ .seedd{
+ background-color: #2f2f37;
+   width: 50%;
+   height: 540px;
+    margin: 0;
+    position: relative;
+border-top-right-radius: 16px;
+border-bottom-right-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 520px;flex-direction: column;
+    overflow: hidden;
+gap: 24px;
+}
+
+ 
+ .seedd img{
+    width: 65%;
+    /* position: absolute; */
+    /* left:150px; */
+    /* top: 20px; */
+    height: auto;
+    border-radius: 20px;
+    /* right: 87px; */
+ }
+
+ .las{
+position: static; 
+/* right:620px;
+bottom:350px; */
+text-align: start;
+/* text-decoration: none;
+font-size: 20px;
+font-weight: 600;
+color: rgb(132, 44, 220); */
+}
+.las a{
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #9d8bff ;
+}
+.las:hover a{
+    color: blue;
+    text-decoration: underline;
+}
+ .delee{
+    background-color:#18181d;
+   width: 50%;
+   height: 540px;
+border-top-left-radius: 16px;
+border-bottom-left-radius: 15px;
+padding:50px 40px;
+    overflow: hidden;
+position: relative;
+max-width: 520px;
+/* text-align: center; */
+ }
+
+.egbe{
+position: relative;
+
+}
+.egbe h2{
+    color: white;
+    padding-top: 25px;
+}
+
+.usss{   
+    width: 130px;
+    
+   
+}
+
+.egbe select{
+    position: absolute;
+    top: 25px;
+    left: 250px;
+    font-size: 18px;
+    width: 75px;
+    height:27px ;
+    background-color: #18181d;
+    color: white;
+    display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+ 
+}
+
+
+.egbs label h3{
+color: white;
+padding-top: 15px;
+font-size: 15px;
+font-weight: 400;
+padding-bottom:30px;
+}
+
+.egbs input{
+    width: 90%;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #18181d;
+    border: 1px solid #3f3f46;
+    color: white;
+    font-size: 15px;
+    padding: 0px 14px;
+}
+.hid{
+    color: white;
+    text-align: center;
+    /* position: inherit; */
+    /* visibility: hidden; */
+    opacity: 0;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.hid:hover{
+    color: white;
+    opacity: 1.0;
+    /* visibility: visible; */
+}
+
+.heal button{
+    width: 90%;
+    height: 46px;
+    border-radius: 7px;
+    background-color: #2f2f37;
+    border: none;
+    cursor: pointer;
+}
+
+.heal span{
+    color: #68717e;
+}
+.heal{
+    padding-top: 10px;
+}
+.dont{
+    padding-top: 30px;
+    color: white;
+        font-size: 17px;
+
+}
+.dont a{
+    color: #7898fa;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==
+
+
+=======================================
+   TABLETS & SMALL LAPTOPS (900px and below)
+   ========================================= */
+@media screen and (max-width: 900px) {
+    .esede {
+        padding: 30px 24px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .deen {
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 24px;
+    }
+
+    /* Make both panels full-width and round all 4 corners when stacked */
+    .delee,
+    .seedd {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        border-radius: 16px;
+        top: 0;
+    }
+
+    .seedd {
+        padding: 40px 24px;
+    }
+
+    /* Reset hardcoded "Register now" offsets so it centers below the card */
+    .las {
+        position: static;
+        text-align: center;
+        padding-top: 12px;
+    }
+}
+
+/* =========================================
+   MOBILE PHONES (480px and below)
+   ========================================= */
+@media screen and (max-width: 480px) {
+    .esede {
+        padding: 20px 16px;
+    }
+
+    .delee {
+        padding: 32px 20px;
+    }
+
+    .delee h1 {
+        font-size: 26px;
+        padding-top: 20px;
+    }
+
+    .egbe h2 {
+        font-size: 20px;
+    }
+
+    /* Move region selector cleanly without overlapping the heading */
+    .egbe select {
+        position: static;
+        margin-top: 12px;
+        width: 90px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .egbs input,
+    .heal button {
+        width: 100%;
+    }
+
+    .seedd img {
+        width: 85%;
+    }
+}

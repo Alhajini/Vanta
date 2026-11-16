@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav,
+        .parent {
+            display: flex;
+            gap: 30px;
+        }
+
+        .btns {
+            padding: 30px;
+            background-color: purple;
+        }
+
+        .parent-two {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        .flex {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 600px;
+            z-index: 1000;
+        }
+
+        .li {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .li:hover .flex {
+            display: flex;
+
+        }
+
+        .flex-two {
+            display: flex;
+            gap: 60px;
+        }
+
+        .flex-three {
+            display: flex;
+            align-items: center;
+        }
+        .plat-btn{
+            display: none;
+        }
+        .focus-btn:focus .plat-btn{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div><img src="6400ac82429afb0f7b31fa6c_vanta-logo.svg" alt=""></div>
+
+        <div>
+            <ul class="parent">
+                <li class="li">Platform <i class="bi bi-chevron-down"></i>
+
+                    <div class="flex">
+                        <div class="btns">
+                            <button>Product</button>
+                            <button class="focus-btn">Platform
+
+                                <div class="plat-btn">
+                                    <div class="flex-three">
+                                        <div>
+                                            <h1>Compliance</h1>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                        </div>
+
+                                            <div>
+                                        <img src="./6400ac82429afb0f7b31fa6c_vanta-logo.svg" alt="">
+                                    </div>
+                                    </div>
+
+                                
+                                </div>
+
+
+
+
+                            </button>
+                        </div>
+
+                        <div class="parent-two">
+
+                            <div class="flex-two">
+
+                                <div>
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Compliance</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing!</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </li>
+
+                <li>Solutions <i class="bi bi-chevron-down"></i></li>
+                <li>Patrners <i class="bi bi-chevron-down"></i></li>
+                <li>Resources <i class="bi bi-chevron-down"></i></li>
+                <li>Plans <i class="bi bi-chevron-down"></i></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
